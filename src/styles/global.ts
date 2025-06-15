@@ -7,25 +7,19 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  :focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px ${props => props.theme['brandDark']};
   }
 
   body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: ${props => props.theme.colors['bgLight']};
-    font-size: 1.6rem;
-    text-align: center;
-    overflow: overlay;
+    background-color: ${props => props.theme['brand-light']};
+    color: ${props => props.theme['brand-primary']};
+    -webkit-font-smoothing: antialiased;
   }
 
-  a {
-    text-decoration: none;
+  border-style, input-security, textarea, button {
+    font: 400 1rem Roboto, sans-serif;
   }
 
-  ul {
-    list-style: none;
-    display: block;
-  }
 `;
