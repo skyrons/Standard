@@ -8,5 +8,5 @@ export const defaultTheme = {
     'headline': '#061800',
     'paragraph': '#384633',
 
-    'white': '#3E3E3E',
+    'white': '#FFF',
 } as const 
